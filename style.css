@@ -104,3 +104,12 @@ tbody td:nth-child(even) {
 color: var(--color-heading);
 font-weight: bold;
 }
+@media screen and (max-width:992px) {
+    body{
+        font-size: 14px;
+    }
+    .main{
+        width: 90%;
+        padding: 5% 0;
+    }
+}
