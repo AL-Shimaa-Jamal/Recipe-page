@@ -3,43 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe page</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="shortcut icon"
-      href="images/favicon-32x32.png"
-      type="image/x-icon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="Fonts/outfit/Outfit-VariableFont_wght.ttf" />
-    <link rel="stylesheet" href="Fonts/young-serif/YoungSerif-Regular.ttf" />
+
+    <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <div class="main">
-      <section class="image">
-        <img
-          src="images/image-omelette.jpeg"
-          alt="image-omelette"
-          loading="lazy"
-        />
-      </section>
-      <section class="intro">
-        <h1>simple omelette recipe</h1>
-        <p>
-          An easy and quick dish, perfect for any meal. This classic omelette
-          combines beaten eggs cooked to perfection, optionally filled with your
-          choice of cheese, vegetables, or meats.
-        </p>
-      </section>
-      <section class="alert">
-        <h2>Preparation time</h2>
+    <main>
+      <!-- hero section  -->
+      <header class="container">
+        <div>
+          <img
+            src="/images/image-omelette.jpeg"
+            alt="omelette"
+            width="100%"
+            height="50%"
+          />
+        </div>
+        <div>
+          <p class="title">Simple Omelette Recipe</p>
+          <span class="subheading">
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </span>
+        </div>
+      </header>
+      <!-- list items -->
+      <div class="container listItems">
+        <h2 class="headerTitle">Preparation time</h2>
         <ul>
-          <li><b> Total: </b> Approximately 10 minutes</li>
-          <li><b>Preparation:</b> 5 minutes</li>
-          <li><b>Cooking:</b> 5 minutes</li>
+          <li>
+            <span class="subheading">Total:</span> Approximately 10 minutes
+          </li>
+          <li><span class="subheading">Preparation:</span> 5 minutes</li>
+          <li><span class="subheading">Cooking:</span> 5 minutes</li>
         </ul>
-      </section>
-      <section class="Ingredients">
-        <h3>Ingredients</h3>
+      </div>
+      <!-- Ingredients -->
+      <div class="container">
+        <h2 class="headerTitle">Ingredients</h2>
         <ul>
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
@@ -49,67 +57,86 @@
             Optional fillings: cheese, diced vegetables, cooked meats, herbs
           </li>
         </ul>
-      </section>
-      <section class="instruction">
-        <h3>Instructions</h3>
-        <ol>
+        <hr class="hr" />
+      </div>
+      <!-- Instructions -->
+      <div class="container">
+        <h2 class="headerTitle">Instructions</h2>
+        <ul>
           <li>
-            <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt
-            and pepper until they are well mixed. You can add a tablespoon of
-            water or milk for a fluffier texture.
+            <span>
+              Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
+              pepper until they are well mixed. You can add a tablespoon of
+              water or milk for a fluffier texture.
+            </span>
           </li>
           <li>
-            <b> Heat the pan:</b>b> Place a non-stick frying pan over medium
-            heat and add butter or oil.
+            <span>
+              Heat the pan: Place a non-stick frying pan over medium heat and
+              add butter or oil.
+            </span>
           </li>
           <li>
-            <b> Cook the omelette: </b> Once the butter is melted and bubbling,
-            pour in the eggs. Tilt the pan to ensure the eggs evenly coat the
-            surface.
+            <span>
+              Cook the omelette: Once the butter is melted and bubbling, pour in
+              the eggs. Tilt the pan to ensure the eggs evenly coat the
+              surface.</span
+            >
           </li>
           <li>
-            <b> Add fillings (optional): </b> When the eggs begin to set at the
-            edges but are still slightly runny in the middle, sprinkle your
-            chosen fillings over one half of the omelette.
+            <span>
+              Add fillings (optional): When the eggs begin to set at the edges
+              but are still slightly runny in the middle, sprinkle your chosen
+              fillings over one half of the omelette.
+            </span>
           </li>
           <li>
-            <b> Fold and serve: </b> As the omelette continues to cook,
-            carefully lift one edge and fold it over the fillings. Let it cook
-            for another minute, then slide it onto a plate.
+            <span>
+              Fold and serve: As the omelette continues to cook, carefully lift
+              one edge and fold it over the fillings. Let it cook for another
+              minute, then slide it onto a plate.
+            </span>
           </li>
           <li>
-            <b> Enjoy: </b> Serve hot, with additional salt and pepper if
-            needed.
+            <span>
+              Enjoy: Serve hot, with additional salt and pepper if needed.
+            </span>
           </li>
-        </ol>
-      </section>
-      <section class="Nutrition">
-        <h3>Nutrition</h3>
+        </ul>
+      </div>
+      <!--Nutrition  -->
+      <div class="container">
+        <h2 class="headerTitle">Nutrition</h2>
+        <span class="subheading">
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </span>
         <table>
-          <p>
-            The table below shows nutritional values per serving without the
-            additional
-          </p>
-          <tbody>
-            <tr>
-              <td>calories</td>
-              <td>227kcal</td>
-            </tr>
-            <tr>
-              <td>Carbs</td>
-              <td>0g</td>
-            </tr>
-            <tr>
-              <td>Protein</td>
-              <td>20g</td>
-            </tr>
-            <tr>
-              <td>Fat</td>
-              <td>22g</td>
-            </tr>
-          </tbody>
+          <tr>
+            <td>Calories</td>
+            <td>277kcal</td>
+          </tr>
+          <tr>
+            <td>Carbs</td>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>20g</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td>22g</td>
+          </tr>
         </table>
-      </section>
-    </div>
+      </div>
+      <!-- footer -->
+      <div class="attribution ">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/AL-Shimaa-Jamal">Al-Shimaa</a>.
+      </div>
+    </main>
   </body>
 </html>
